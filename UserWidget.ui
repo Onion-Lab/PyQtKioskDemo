@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserWidget</class>
+ <widget class="QWidget" name="UserWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>User</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0">
+     <item>
+      <layout class="QGridLayout" name="productLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <property name="spacing">
+        <number>2</number>
+       </property>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
+       <item>
+        <widget class="QTableWidget" name="orderTable">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>280</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>23</number>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+         <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderHighlightSections">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+          <bool>false</bool>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>menu</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>pcs</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>price</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>금액 합계</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="totalEdit">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>190</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Normal</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="clearButton">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="orderButton">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Order</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

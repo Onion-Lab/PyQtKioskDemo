@@ -1,0 +1,14 @@
+[Unit]
+Description=KIOSK GUI Service
+After=multi-user.target
+
+[Service]
+#### wayland environment file
+EnvironmentFile=/home/pi/Kiosk/environment/qtenv
+User=pi
+WorkingDirectory=/home/pi/Kiosk
+ExecStart=/usr/bin/python3 main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

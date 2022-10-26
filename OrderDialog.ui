@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>orderDialog</class>
+ <widget class="QDialog" name="orderDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Recommend</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,0">
+   <item>
+    <widget class="QTableWidget" name="recommendTable">
+     <property name="maximumSize">
+      <size>
+       <width>400</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <column>
+      <property name="text">
+       <string>menu</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>recommend</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>pcs</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="orderButton">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>okay</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>orderButton</sender>
+   <signal>clicked()</signal>
+   <receiver>orderDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelButton</sender>
+   <signal>clicked()</signal>
+   <receiver>orderDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>373</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>394</x>
+     <y>354</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWidget</class>
+ <widget class="QWidget" name="MainWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Home</string>
+  </property>
+  <widget class="QPushButton" name="UserViewButton">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>180</y>
+     <width>190</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AdminViewButton">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>180</y>
+     <width>190</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Admin</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="backButton">
+       <property name="maximumSize">
+        <size>
+         <width>60</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Home</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+     <item>
+      <layout class="QGridLayout" name="productLayout">
+       <property name="spacing">
+        <number>2</number>
+       </property>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0,0">
+       <item>
+        <widget class="QTableWidget" name="revenueTable">
+         <property name="maximumSize">
+          <size>
+           <width>280</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <attribute name="horizontalHeaderMinimumSectionSize">
+          <number>23</number>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>50</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>num</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>menu</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>pcs</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>price</string>
+          </property>
+         </column>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="dateLabel">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="revenueEdit">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Consolas</family>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="clearButton">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="loadButton">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Load</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
